@@ -1,0 +1,18 @@
+RewriteEngine on
+
+#photostreams
+RewriteRule ^([0-9]+)/([0-9]+)/? ?content_type=$1&photo_id=$2 [L] #sets rewrite
+RewriteRule ^photostream/([0-9]+)/? ?content_type=photostream&photo_id=$1 [L]
+RewriteRule ^street/([0-9]+)/? ?content_type=street&photo_id=$1 [L]
+RewriteRule ^portrait/([0-9]+)/? ?content_type=portrait&photo_id=$1 [L]
+RewriteRule ^space/([0-9]+)/? ?content_type=space&photo_id=$1 [L]
+RewriteRule ^about/? /?content_type=about
+RewriteRule ^sets/? /?content_type=sets
+
+#kill www
+RewriteCond %{HTTP_HOST} ^www.bykovvasily\.ru$ [NC]
+RewriteRule ^(.*)$ http://bykovvasily.ru/$1 [R=301,L]
+
+#404
+RewriteRule 404 404.php
+ErrorDocument 404 /404.php

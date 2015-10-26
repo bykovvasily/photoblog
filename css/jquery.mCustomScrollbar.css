@@ -1,0 +1,111 @@
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.mCSB_container{
+	width:auto;
+	overflow:hidden;
+}
+.mCSB_container.mCS_no_scrollbar{
+	margin-right:0;
+}
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{
+	margin-right:30px;
+}
+.mCustomScrollBox>.mCSB_scrollTools{
+	width:30px;
+	height:100%;
+	top:0;
+	right: -17px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0; 
+	height:auto;
+}
+.mCSB_scrollTools a+.mCSB_draggerContainer{
+	margin:20px 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+	width:2px;
+	height:100%;
+	margin:0 auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+.mCSB_scrollTools .mCSB_dragger{
+	cursor:pointer;
+	width:100%;
+	height:30px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:4px;
+	height:100%;
+	margin:0 auto;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	text-align:center;
+}
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+	display:block;
+	position:relative;
+	height:20px;
+	overflow:hidden;
+	margin:0 auto;
+	cursor:pointer;
+}
+.mCSB_scrollTools .mCSB_buttonDown{
+	top:100%;
+	margin-top:-40px;
+}
+/*dark-2*/
+.mCS-dark-2>.mCSB_scrollTools .mCSB_draggerRail{
+	width:4px;
+	background:#000; /* rgba fallback */
+	background:rgba(0,0,0,0.1);
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:4px;
+	background:#000; /* rgba fallback */
+	background:rgba(0,0,0,0.75);
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+}
+.mCS-dark-2.mCSB_horizontal>.mCSB_scrollTools .mCSB_draggerRail{
+	width:100%;
+	height:4px;
+	margin:6px 0;
+}
+.mCS-dark-2.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width:100%;
+	height:4px;
+	margin:6px auto;
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+	background:rgba(0,0,0,0.85);
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-2>.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background:rgba(0,0,0,0.9);
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_buttonUp{
+	background-position:-112px 0;
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_buttonDown{
+	background-position:-112px -20px;
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_buttonLeft{
+	background-position:-120px -40px;
+}
+.mCS-dark-2>.mCSB_scrollTools .mCSB_buttonRight{
+	background-position:-120px -56px;
+}
