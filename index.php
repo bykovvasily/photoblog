@@ -147,8 +147,6 @@
             document.write(unescape("%3Cscript src='/js/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
-    <!-- cookie plugin -->
-    <script src="/js/jquery.cookie.js"></script>
     <!-- scroll -->
     <script src="/js/jquery.mCustomScrollbar.js"></script>
     <!-- main functional -->
